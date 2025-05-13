@@ -1,35 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
 
+
+
+
 body {
   height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: 1000px;
   background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
   background-position: center center;
-  overflow-x: hidden;
-  font-family: 'Zeyada', cursive;
 }
 
 .paper {
   background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
-  background-size: cover;
+  background-size: 500px;
   background-position: center center;
-  padding: 20px;
-  position: absolute;
-  box-shadow: 1px 15px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px 100px;
+/*  min-width: 800px; */
+  
   transform: rotateZ(-5deg);
-  max-width: 90vw;
-  box-sizing: border-box;
-  border-radius: 10px;
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  
+  position: absolute;
 }
 
 .paper.heart {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   padding: 0;
   border-radius: 50%;
+}
+
+.paper.image {
+  padding: 10px;
+}
+.paper.image p {
+  font-size: 30px;
+}
+
+img {
+  max-height: 200px;
+  width: 100%;
+  user-select: none;
 }
 
 .paper.heart::after {
@@ -40,38 +56,18 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: 150px;
   background-position: center center;
+  background-repeat: no-repeat;
   opacity: 0.6;
 }
 
-.paper.image {
-  padding: 10px;
-}
-
-.paper.image p {
-  font-size: 24px;
-  text-align: center;
-}
-
-img {
-  max-height: 200px;
-  width: 100%;
-  user-select: none;
-  border-radius: 10px;
-}
-
 p {
-  font-size: 32px;
-  color: rgb(0, 0, 100);
-  opacity: 0.8;
-  text-align: center;
-  margin: 10px 0;
+  font-family: 'Zeyada';
+  font-size: 50px;
+  color: rgb(0,0,100);
+  opacity: 0.75;
   user-select: none;
-}
-
-/* Optional: improve drag on mobile */
-* {
-  touch-action: manipulation;
+  
+  // filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
 }
