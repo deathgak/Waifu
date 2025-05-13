@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drag the Papers Darling~❤️</title>
+  
+  <!-- ✅ Viewport for responsive scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Short+Stack&family=Homemade+Apple&display=swap">
+  
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    /* ✅ Add responsive support in case style.css is missing this */
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Short Stack', cursive;
+      background: #fff;
+      overflow-x: hidden;
+    }
+
+    .paper {
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 15px;
+      background: #fdf6e3;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      touch-action: pan-y;
+    }
+
+    .paper img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .paper p {
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+
+    .heart {
+      height: 50px; /* Adjust as needed */
+      background-color: pink;
+    }
+
+    @media (min-width: 600px) {
+      .paper p {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="paper heart">
+</div>
+
+<div class="paper image">
+  <p>And I have fallen in</p>
+  <p>Love with You 😍</p>
+  <img src="images/image.1.jpeg" alt="Love image 1" />
+</div>
+
+<div class="paper image">
+  <p>So many memories 💭</p>
+  <img src="images/image.2.jpeg" alt="Memory image 2" />
+</div>
+
+<div class="paper image">
+  <p>How can someone</p>
+  <p>be so cute ❤️</p>
+  <img src="images/image.3.jpeg" alt="Cute image 3" />
+</div>
+
+<div class="paper image">
+  <p>I will always be with you</p>
+  <p>I love you noyi ❤️</p>
+  <img src="images/image.4.jpeg" alt="Love image 4" />
+</div>
+
+<div class="paper red">
+  <p class="p1">And my favorite</p>
+  <p class="p2">Person 😍</p>
+</div>
+
+<div class="paper">
+  <p class="p1">You are Cute</p>
+  <p class="p1">Amazing <span style="color: red;">❤️</span></p>
+</div>
+
+<div class="paper">
+  <p class="p1">Drag the papers to move!</p>
+</div>
+
+<!-- JS for drag effect -->
+<script src="./script.js"></script>
+
+</body>
+</html>
